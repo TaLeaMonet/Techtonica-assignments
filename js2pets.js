@@ -5,17 +5,17 @@ function printCuteAnimals(){
   var pet2 = "cats";
 
   myPets = [pet1, pet2];
+  let cuteAnimals = myPets.concat(myPets.length);
 
-  return myPets.length
+  var pet3 = "turtle";
+  var pet4 = "lizard";
+  myNewPets = [pet3, pet4];
+
+  let newCuteAnimals = myPets.concat(myNewPets);
+
+
+  return newCuteAnimals.concat(newCuteAnimals.length)
 
 }
 
-console.log(printCuteAnimals(myPetsAll));
-/*
-function getAnimals() {
-    return [getFirstValue(), getSecondValue()];
-}
-
-var values = getAnimals();
-var first = values[0];
-var second = values[1];*/
+console.log(printCuteAnimals());
