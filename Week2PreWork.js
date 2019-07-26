@@ -51,18 +51,25 @@
 // that its new value would be a string that says:
 // "The value of num1 is <value here> and is greater than 10".
 
-function exercise1(num1) {
-  var answer1 = "";
-  answer1 = "num1 is small";
-  // ------------------------------------------
+var answer1 = "";
+// ------------------------------------------
+// Write your code for exercise 1 below here:
+// ------------------------------------------
+answer1 = "num1 is small";
+
+function isGreater(num1){
   if (num1>10) {
-      answer1 = "The value of num1 is" + num1 + " and is greater than 10."
+      answer1 = "The value of num1 is " + num1 + " and is greater than 10."
   }
-  // ------------------------------------------
-  return answer1;
+// ------------------------------------------
+// And above here
+// ------------------------------------------
+return answer1;
 }
 
-console.log(exercise1(8));
+isGreater(9);
+
+
 /*
 
 */
