@@ -69,12 +69,6 @@ return answer1;
 
 isGreater(9);
 
-
-/*
-
-*/
-
-
 // EXERCISE 2.
 // Write an if/else conditional statement that if given a number will assign
 // a string value of:
@@ -90,12 +84,17 @@ function exercise2(num2) {
   // --------------------------------------------
   // Write your code for the exercise below here:
   // --------------------------------------------
-
+  if(num2 % 2 === 0){answer2 = num2 + " is even";
+  }
+  else {answer2 = num2 + " is odd";
+  }
   // --------------------------------------------
   // And above here
   // --------------------------------------------
   return answer2;
 }
+
+exercise2(4);
 
 
 // EXERCISE 3.
@@ -111,13 +110,29 @@ function exercise3(num3) {
   var answer3;
   // --------------------------------------------
   // Write your code for the exercise below here:
-  // --------------------------------------------
-
-  // --------------------------------------------
-  // And above here
-  // --------------------------------------------
-  return answer3;
-}
+  // --------------------------------------------  
+    var zero = num3 + " is zero.";
+    var positive = num3 + " is positive.";
+    var negative = num3 + " is negative.";
+    
+    if(num3>0){
+      return answer3 = positive;
+      }
+    
+      else if (num3<0){
+        return answer3 = negative;
+      }
+  
+      else {
+        return answer3 = zero;
+      }
+    // --------------------------------------------
+    // And above here
+    // --------------------------------------------
+    return answer3;
+  } 
+  
+  exercise3(-7);
 
 
 // EXERCISE 4.
