@@ -296,16 +296,47 @@ exercise8(3, 7, 2, 5);
 // for example, if item===true, the value should be:
 // "Please send a number, that was a boolean."
 function exercise9(item) {
+    
   var answer9;
   // --------------------------------------------
   // Write your code for the exercise below here:
   // --------------------------------------------
+      switch(item) {
+      
+          case 1:
+              answer9 = "You won!";
+              break;
+            
+          case 7:
+              answer9 = "You are lucky!";
+              break;
+      
+          case 101:
+              answer9 = "Welcome to coding 101!";
+              break;
+      
+          case 1000000:
+              answer9 = "You are one in a million!";
+              break;
 
+              default: 
+              answer9 = "Thanks for that!";
+
+          case typeof item === "string":
+              answer9 = "Please send a number, that was a string.";
+              break;
+
+          case typeof item === "boolean":
+              answer9 = "Please send a number, that was a Boolean.";                   
+              break;      
+      }
   // --------------------------------------------
   // And above here
   // --------------------------------------------
   return answer9;
 }
+
+exercise9("hello");
 
 
 // EXERCISE 10.
@@ -323,12 +354,28 @@ function exercise10(num10) {
   // --------------------------------------------
   // Write your code for the exercise below here:
   // --------------------------------------------
+  if(num10%3 === 0){
+      answer10 = "Fizz";
+  }
 
+  else if (num10%5 === 0){
+      answer10 = "Buzz";
+  }
+
+  else if (num10%15 === 0){
+      answer10 = "Fizz Buzz";
+  }
+
+  else {
+      answer10 = num10;
+  }
   // --------------------------------------------
   // And above here
   // --------------------------------------------
   return answer10;
 }
+
+exercise10(9);
 
 // Congrats, you made it to the end! You rock!
 // Did you find this easy or hard? If you used references, which ones helped you? 
