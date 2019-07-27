@@ -146,12 +146,21 @@ function exercise4(varA, varB) {
   // --------------------------------------------
   // Write your code for the exercise below here:
   // --------------------------------------------
+  if (varA == varB){
+    return answer4 = "varA and varB are equal";
+}
 
+  else {
+    return answer4 = "varA and varB differ";
+}
+//------
   // --------------------------------------------
   // And above here
   // --------------------------------------------
   return answer4;
 }
+
+exercise4("5", 3);
 
 
 // EXERCISE 5.
@@ -169,15 +178,23 @@ function exercise6(varA, varB, varC) {
   // --------------------------------------------
   // Write your code for the exercise below here:
   // --------------------------------------------
-
+  if (varA == varB && (varA || varB) != varC){
+    return answer6 = "true";
+  }
+  
+  else {
+    return answer6 = "fasle";
+  }
   // --------------------------------------------
   // And above here
   // --------------------------------------------
   return answer6;
-}
+  }
+  
+  exercise6("4", 4, 3);
 
 
-// EXERCISE 8.
+// EXERCISE 7.
 // Use a switch conditional statement with case clauses such that if `num7` is
 // a number and it has a value of 1 that `answer7` is assigned the string:
 // "You won!"
@@ -202,6 +219,50 @@ function exercise7(num7) {
   return answer7;
 }
 
+// EXERCISE 7.
+// Use a switch conditional statement with case clauses such that if `num7` is
+// a number and it has a value of 1 that `answer7` is assigned the string:
+// "You won!"
+// if num7 is 7, then answer7 should be:
+// "You are lucky!"
+// if num7 is 101, then answer7 should be:
+// "Welcome to coding 101!"
+// if num7 is 1000000, then answer7 should be:
+// "You are one in a million!"
+// Othewise, assign answer7 a value of:
+// "Thanks for that!"
+
+function exercise7(num7){
+  var answer7;
+  
+  switch(num7) {
+  
+      case 1:
+          answer7 = "You won!";
+          break;
+        
+      case 7:
+          answer7 = "You are lucky!";
+          break;
+  
+      case 101:
+          answer7 = "Welcome to coding 101!";
+          break;
+  
+      case 1000000:
+          answer7 = "You are one in a million!";
+          break;
+  
+      default: 
+          answer7 = "Thanks for that!";
+  }
+  
+  return answer7;
+  }
+  
+  console.log(exercise7(8));
+
+
 // EXERCISE 8.
 // Using any conditional assign the value of true to answer8 if:
 // the values of amount 1 and amount2 are between the values of
@@ -212,12 +273,20 @@ function exercise8(amount1, amount2, minimum, maximum) {
   // --------------------------------------------
   // Write your code for the exercise below here:
   // --------------------------------------------
+  if(amount1 && amount2>minimum && amount1 && amount2<maximum){
+      answer8 = true;
+  }
 
+  else {
+      answer8 = false;
+  }
   // --------------------------------------------
   // And above here
   // --------------------------------------------
   return answer8;
 }
+
+exercise8(3, 7, 2, 5);
 
 // EXERCISE 9.
 // In this exercise, if `item` is a number, follow the rules given in Exercise 7
