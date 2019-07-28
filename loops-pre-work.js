@@ -33,17 +33,12 @@ var nums = [];
 
 // Exercise 3. Write a 'for' loop that prints the integers (whole numbers)
 // between 1 and 5 (inclusive).
-var lowEnd = 1;
-var highEnd = 5;
-var arr = [];
-for(i = 0; i >= lowEnd && i <= highEnd; i++){
-   arr.push(lowEnd, highEnd, i++);
-}
 
-console.log(arr);
-
-
-
+var nums = [];
+  for(i=1; i <= 5; i++){
+    nums += i;
+  }
+  console.log(nums);
 
 // Exercise 4. Now we want a loop that prints the integers 
 // counting DOWN from 10 to 1 (inclusive). Write three loops that do this, to practice
