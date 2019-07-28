@@ -45,17 +45,14 @@ var nums = [];
 // writing loops in all 3 ways -- as a 'while', 'do while', and 'for' loop.
 
 //While loop:
-function rev(){
-    var i = 1;
-    var nums = [];
-    while (i <= 5) {
-    return i;
-    i++
-    }
-    i.push(nums);
-}
+var i = 10;
 
-console.log(rev());
+  while(i >= 1){
+    console.log(i);
+    i--;
+  }
+
+
 
 //Do while loop:
 
@@ -63,6 +60,9 @@ console.log(rev());
 
 
 //For loop:
+for(i=10; i >= 1; i--){
+  console.log(i);
+}
 
 
 

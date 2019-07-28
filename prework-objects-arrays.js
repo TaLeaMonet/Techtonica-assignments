@@ -43,8 +43,9 @@ console.log(animals.length);
 animals.pop();
 console.log(animals);
 
-
 // Exercise 9. Now make a new array named assortedThings that contains at least 3 strings and 3 numbers.
+
+var assortedThings = ["dog", "cat", "bird", 1, 2, 3];
 
 
 // Exercise 10. Write a for loop that iterates through the assortedThings array and prints each index and item, such as:
@@ -52,6 +53,13 @@ console.log(animals);
 // Item #1 is 4
 // Item #2 is Hello World
 // ...
+
+
+for (i = 0; i <= assortedThings.length -1; i++){
+console.log("Item #" + i + " is " + assortedThings[i]);
+}
+
+
 
 
 // Exercise 11. Write a function that takes an array of numbers as a parameter. For each number in the array, 
@@ -63,6 +71,13 @@ console.log(animals);
 // 50 small
 //
 // Then write some function calls you would use to test your function.
+
+function hello(array){
+    return array;
+
+}
+
+console.log(hello([1, 2, 3]));
 
 
 // Exercise 12. Make an object called me that contains the following keys: name, favoriteAnimal, favoriteNumber
