@@ -44,6 +44,27 @@ var nums = [];
 // counting DOWN from 10 to 1 (inclusive). Write three loops that do this, to practice
 // writing loops in all 3 ways -- as a 'while', 'do while', and 'for' loop.
 
+//While loop:
+function rev(){
+    var i = 1;
+    var nums = [];
+    while (i <= 5) {
+    return i;
+    i++
+    }
+    i.push(nums);
+}
+
+console.log(rev());
+
+//Do while loop:
+
+
+
+
+//For loop:
+
+
 
 // Exercise 5. Write a loop that prints the integers from 7 to 27. Write this 
 // loop in all 3 ways -- as a 'while', 'do while', and 'for' loop.
