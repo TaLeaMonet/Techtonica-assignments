@@ -193,32 +193,6 @@ function exercise6(varA, varB, varC) {
   
   exercise6("4", 4, 3);
 
-
-// EXERCISE 7.
-// Use a switch conditional statement with case clauses such that if `num7` is
-// a number and it has a value of 1 that `answer7` is assigned the string:
-// "You won!"
-// if num7 is 7, then answer7 should be:
-// "You are lucky!"
-// if num7 is 101, then answer7 should be:
-// "Welcome to coding 101!"
-// if num7 is 1000000, then answer7 should be:
-// "You are one in a million!"
-// Othewise, assign answer7 a value of:
-// "Thanks for that!"
-
-function exercise7(num7) {
-  var answer7;
-  // --------------------------------------------
-  // Write your code for the exercise below here:
-  // --------------------------------------------
-
-  // --------------------------------------------
-  // And above here
-  // --------------------------------------------
-  return answer7;
-}
-
 // EXERCISE 7.
 // Use a switch conditional statement with case clauses such that if `num7` is
 // a number and it has a value of 1 that `answer7` is assigned the string:
