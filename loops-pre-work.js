@@ -11,17 +11,24 @@
 
 // Exercise 1. Write a 'while' loop that prints the integers (whole numbers)
 // between 1 and 5 (inclusive).
-var nums = [];
 var i = 1;
 while (i <= 5) {
-  nums += i;
-  i++;
+  return i;
+  i++
 }
-
-return nums;
 
 // Exercise 2. Write a 'do while' loop that prints the integers (whole numbers)
 // between 1 and 5 (inclusive).
+var nums = [];
+  var i = 1;
+  do {
+    nums += i;
+    i++;
+  }
+  while (i <= 5);
+
+  console.log(nums);
+
 
 
 // Exercise 3. Write a 'for' loop that prints the integers (whole numbers)
