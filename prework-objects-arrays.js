@@ -27,10 +27,9 @@ animals.push("lizard", "turtle", "snake", "toad");
 // Exercise 4. Update the first item in the array to be "gorilla"
 
 animals.splice(0, 1, "gorilla");
-console.log(animals);
-
 
 // Exercise 5. Print the number of items in the array (use the array property that will give you this information)
+console.log(animals.length);
 
 
 // Exercise 6. Print the first item in the array
@@ -40,6 +39,9 @@ console.log(animals);
 
 
 // Exercise 8. Remove the last item from the array
+
+animals.pop();
+console.log(animals);
 
 
 // Exercise 9. Now make a new array named assortedThings that contains at least 3 strings and 3 numbers.
