@@ -176,20 +176,11 @@ inside 1
 
 for (i = 0; i <= 3; i++) {
   console.log("counting down from " + i);
-  for (j = 3; j >= 0; j--) {
+  for (j = i; j > 0; j--) {
     console.log("inside " + j);
   }
+  console.log("***********************************");
 }
-
-
-for (let outsideCounter = 0; outsideCounter <= 3; ???) {
-  console.log("counting down from", outsideCounter);
-  for (let insideCounter = outsideCounter; ???; ???) {
-      console.log("inside", ???);
-  }
-  console.log("***********************************")
-}
-
 
 // Congrats, you made it to the end!
 // Did you find this easy or hard? If you used references, which ones helped you? 
