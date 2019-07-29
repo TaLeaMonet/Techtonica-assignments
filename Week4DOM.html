@@ -1,0 +1,107 @@
+<html>
+<body>
+	Animals:
+	<ol id="ol1">
+		<li>Frog</li>
+		<li>Dog</li>
+		<li>Bunny</li>
+	</ol>
+
+	<div id="id1">
+		<p>This is the text in div id1</p>
+		<p>Hope you enjoy my HTML</p>
+	</div>
+
+	<p id="id2">Here's some text in a paragraph</p>
+
+	<div class="myClass">
+		I love learning about HTML and JavaScript
+	</div>
+
+	<p class="myClass">
+		Coding is fun
+	</p>
+
+	<button id="button1">Button 1</button>
+	<br/><br/>
+	<button id="button2">Button 2</button>
+</body>
+
+<script type="text/javascript">
+
+// Exercise 1: Select the element with id "id2" and change the text inside it to "Here's some new text"
+console.log(document.getElementById("id2").innerHTML = "Here\'s some new text");
+
+// Exercise 2: Select the element with id "id1" and make the text inside it green.
+document.getElementById("id1").style.color = "green";
+
+
+// Exercise 3: Select the elements that have the class "myClass". console.log the output.
+document.getElementsByClassName("myClass");
+console.log(document.getElementsByClassName("myClass");
+
+// Exercise 4: Select the children of the element with id "id1". console.log the output.
+//
+document.getElementById("id1").children;
+console.log(document.getElementById("id1").children);
+
+
+// Exercise 5: Select all list items on the page. console.log the output.
+document.getElementById("ol1");
+console.log(document.getElementById("ol1"));
+
+
+// Exercise 6: Use JavaScript to find the *number* of list items on the page. console.log the output.
+console.log(document.getElementById("ol1").length);
+
+
+// Exercise 7: Using JavaScript, create a list item and add it to the end of the ordered list.
+
+function appendMyList() {
+    var newElem = document.createElement("li");
+    var orderList = document.getElementById("ol1");
+    orderList.appendChild(orderList);
+    document.getElementById("ol1").appendChild(orderList);
+  }
+
+  appendMyList();
+
+// Exercise 8: Using JavaScript, make it so that when button1 is clicked, 
+// an alert pops up saying "Hi from Techtonica".
+var button1 = document.getElementById('button1');
+button1.addEventListener('click', function(){
+    alert('Hi from Techtonica')
+});
+
+// Exercise 9: In your own words, write a few sentences explaining what the DOM is. Write your answer in a comment below:
+//Document Object Model - exists inside the browser (which has a js engine)
+//dom tree, browswer creates a dom tree in memory, 
+
+/*
+The Document Object Model (DOM) is created by the browser, that sets up the html tree and a global variable "document". This enables js files to access and manipulate html files to create dynamic content, as "var document" is a variable that js understands.
+*/
+
+
+// The next two exercises combine the DOM with other JavaScript you've learned. Try them for an extra challenge!
+
+// Exercise 10: Select the elements with the class "myClass" and update the text inside each of them to end with "!"
+// Hint: To operate on multiple elements, you can use a loop.
+
+var myClassEls = document.getElementsByClassName('myClass');
+for (let i = 0; i < myClassEls.length; i++) {
+        myClassEls[i].innerText += '!';
+    }
+
+// Exercise 11: Make it so when the button2 is clicked, 
+// the children of the element with id "id1" each have their text replaced with a random number 1-100
+var button2 = document.getElementById("button2");
+button2.addEventListener("click", function(){
+    let id1Children = document.getElementById("id1".children)
+    for(let j = 1; j < id1Children.length; j++){
+        id1Children[j].innerText = 1 + Math.floor(Math.random() * (100))
+    }
+});
+
+</script>
+
+</html>
