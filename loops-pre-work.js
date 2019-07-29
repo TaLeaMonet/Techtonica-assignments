@@ -108,16 +108,21 @@ while (counterFour < 2) {
 }
 
 //This is an infinite loop because 1 will always be less than 2. The solution below replaces the counterFour-- to ++ so that it will stop running when counterFour increases over each iteration.
+
 let counterFour = 1;
 while (counterFour < 2) {
     console.log('HELP ME!')
     counterFour++;
 }
 
-
 // Exercise 8. Make a variable that contains your favorite integer. Write a loop 
 // (your choice which type) that prints the integers from 0 to that number.
 
+var num = 7;
+
+for (i = 0; i <= num; i++){
+    console.log(i);
+}
 
 // Exercise 9. Make a variable that contains your favorite integer (this time make sure it's 
 // less than 100). Write a loop (your choice which type) that prints the integers from 0 to 100.
