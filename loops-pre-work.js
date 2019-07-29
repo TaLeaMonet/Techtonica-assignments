@@ -29,8 +29,6 @@ var nums = [];
 
   console.log(nums);
 
-
-
 // Exercise 3. Write a 'for' loop that prints the integers (whole numbers)
 // between 1 and 5 (inclusive).
 
@@ -38,7 +36,7 @@ var nums = [];
   for(i=1; i <= 5; i++){
     nums += i;
   }
-  console.log(nums);
+  console.log(nums);  
 
 // Exercise 4. Now we want a loop that prints the integers 
 // counting DOWN from 10 to 1 (inclusive). Write three loops that do this, to practice
@@ -52,22 +50,46 @@ var i = 10;
     i--;
   }
 
-
-
 //Do while loop:
 
-
-
+var i = 10;
+  do {
+    console.log(i);
+    i--;
+}
+while(i >= 1);
 
 //For loop:
 for(i=10; i >= 1; i--){
   console.log(i);
 }
 
-
-
 // Exercise 5. Write a loop that prints the integers from 7 to 27. Write this 
 // loop in all 3 ways -- as a 'while', 'do while', and 'for' loop.
+
+//While loop:
+var i = 27;
+
+  while(i >= 7){
+    console.log(i);
+    i--;
+  }
+
+//Do while loop:
+
+var i = 27;
+  do {
+    console.log(i);
+    i--;
+}
+while(i >= 7);
+
+//For loop:
+var nums = [];
+  for(i=7; i <= 27; i++){
+    nums += i;
+  }
+  console.log(nums);  
 
 
 // Exercise 6. Write a loop that prints numbers between 0 and 100, counting by tens.
@@ -82,10 +104,15 @@ for(i=10; i >= 1; i--){
 let counterFour = 1;
 while (counterFour < 2) {
     console.log('HELP ME!')
-    counterFour--;
+    counterFour-;
 }
 
-//This is an infinite loop because 1 will always be less than 2.
+//This is an infinite loop because 1 will always be less than 2. The solution below replaces the counterFour-- to ++ so that it will stop running when counterFour increases over each iteration.
+let counterFour = 1;
+while (counterFour < 2) {
+    console.log('HELP ME!')
+    counterFour++;
+}
 
 
 // Exercise 8. Make a variable that contains your favorite integer. Write a loop 
