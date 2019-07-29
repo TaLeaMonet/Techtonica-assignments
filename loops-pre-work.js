@@ -174,6 +174,14 @@ inside 1
 *********************************** 
 */
 
+for (i = 0; i <= 3; i++) {
+  console.log("counting down from " + i);
+  for (j = 3; j >= 0; j--) {
+    console.log("inside " + j);
+  }
+}
+
+
 for (let outsideCounter = 0; outsideCounter <= 3; ???) {
   console.log("counting down from", outsideCounter);
   for (let insideCounter = outsideCounter; ???; ???) {
