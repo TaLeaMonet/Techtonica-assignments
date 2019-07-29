@@ -135,6 +135,16 @@ for (i = 0; i <= num; i++){
 // ...
 // (Hint - use an if statement in your loop)
 
+function favNum(num) {
+  for (i = 0; i <= num; i++) {
+    if (i === 7) {
+      console.log(i + " is my favorite number.");
+    } else {
+      console.log(i + " is not my favorite number.");
+    }
+  }
+}
+favNum(100);
 
 // Exercise 10. In some of the exercises above, we had you write all 3 types of loops, for practice.
 // But in real life, how would you decide which type of loop to use? You might not have an
