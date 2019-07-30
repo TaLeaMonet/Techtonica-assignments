@@ -6,3 +6,4 @@ return equation
 }
 
 console.log(calculate(42, "*" , 7));
+
