@@ -1,0 +1,11 @@
+function animals(animalArray, youngArray) {
+
+let finalAnswer = "";
+  
+  for(i=0; i < animalArray.length; i++){
+    finalAnswer += "Young " + animalArray[i] + "s " + "are called " + youngArray[i] + " ";
+  }
+  return finalAnswer;
+}
+
+console.log(animals(["dog", "cat", "horse"], ["pups", "kittens", "foals"]));
