@@ -1,11 +1,17 @@
 //Define a method called calculateSum to calculate the sum all the digits from 0 to an input number.
 
 function calculateSum(num) {
-  for (i = 0; i <= num; i++) {
-    var sum = i + num;
-    i++;
+let i = [];
+
+  sum = (i += num);
+
+  while(i <= num) {
+    i++
+
+    return i;
   }
-  console.log(sum);
+
+ return sum;
 }
 
-calculateSum(7);
+console.log(calculateSum(7));
