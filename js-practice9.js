@@ -9,7 +9,7 @@
 var records = {
   theCure: "Disintegration",
 
-  depecheMode: "World in my Eyes"
+  depecheMode: "Music for the Masses"
 };
 
 console.log(records);
