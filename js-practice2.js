@@ -1,7 +1,1 @@
-//Write a function named loopThrough that takes an argument that is a number and loops through and displays a message “Hello World” that number of times.
-
-function loopThrough(num) {
-  for (i = 1; i <= num; i++) console.log("Hello World!");
-}
-
-loopThrough(7);
+Define a method called calculateSum to calculate the sum all the digits from 0 to an input number.
