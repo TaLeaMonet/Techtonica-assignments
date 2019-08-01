@@ -5,7 +5,10 @@ function caluculateSum(num) {
   for (i = 1; i <= num; i++) {
     sum += i;
   }
-  return sum;
+  console.log(sum);
 }
 
-caluculateSum(7);
+caluculateSum(0);
+caluculateSum(1);
+caluculateSum(3);
+caluculateSum(10);
