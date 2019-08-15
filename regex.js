@@ -24,8 +24,21 @@ function replaceSymantec(input_string) {
   return newString;
 }
 
-console.log(replaceSymantec("This function replaces symantec."));
+console.log(replaceSymantec("This function replaces symantec with semantic."));
 
 // Write a function that takes a string and deletes all words that end in ing?
+
+
+function deleteIng(input_string){
+  var ing = input_string.replace(/ing/g, "");
+
+  return ing;
+
+
+}
+
+console.log(deleteIng("Painting and listening to records."));
+
+
 // Write a function that takes a string and returns true if it is an email address? Compare your answer with your neighbor.
 // Write a function that takes a string containing names separated by commas like "Leah, Russell, Michelle" and returns an array of names, ["Leah", "Russell", "Michelle"]
